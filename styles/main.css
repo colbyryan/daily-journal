@@ -1,0 +1,47 @@
+/* LINKS  */
+
+/* GLOBAL STYLES  */
+
+/* HEADER STYLES  */
+.header_section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+}
+
+/* MAIN STYLES */
+
+.Journaldate fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  display: flex;
+  flex-flow: column;
+}
+
+.concepts {
+  display: flex;
+  flex-flow: column;
+}
+
+.mood {
+  display: flex;
+  flex-flow: column;
+}
+/* FOOTER STYLES  */
+
+.copyright {
+  text-align: center;
+}

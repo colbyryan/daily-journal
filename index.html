@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Daily Journal</title>
+  </head>
+  <body>
+    <header>
+      <section class="header_section">
+        <div class="logo">
+          <img src="/images/logo.png" alt="Image of an open journal" />
+        </div>
+        <h1 class="heading">Daily Journal Entries</h1>
+      </section>
+    </header>
+    <main>
+      <h2>Daily Journal</h2>
+      <section class="date">
+        <form action="">
+          <fieldset>
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate" />
+          </fieldset>
+        </form>
+      </section>
+      <section class="concepts">
+        <form action="">
+          <fieldset>
+            <label for="journalConcepts">Concepts Covered</label>
+            <input type="text" name="journalDate" id="journalDate" />
+          </fieldset>
+        </form>
+      </section>
+      <section class="entry">
+        <form action="">
+          <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <textarea
+              name="journalEntry"
+              id="journalEntry"
+              cols="30"
+              rows="2"
+            ></textarea>
+          </fieldset>
+        </form>
+      </section>
+      <section class="mood">
+        <form action="">
+          <fieldset>
+            <label for="journalMood">Mood for the day</label>
+            <select name="journalMood" id="journalMood">
+              <option value="happy">Happy</option>
+              <option value="sad">Sad</option>
+              <option value="confused">Confused</option>
+            </select>
+          </fieldset>
+        </form>
+      </section>
+      <div class="btn">
+        <button>Record Journal Entry</button>
+      </div>
+    </main>
+    <footer>
+      <section class="copyright">&copy;Copyright Colby Ryan</section>
+    </footer>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
