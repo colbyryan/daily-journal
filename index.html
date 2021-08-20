@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINKS  -->
     <link rel="stylesheet" href="styles/main.css" />
     <title>Daily Journal</title>
   </head>
+
   <body>
+    <!-- HEADER SECTION OF THE PAGE  -->
     <header>
       <section class="header_section">
         <div class="logo">
@@ -16,27 +20,34 @@
         <h1 class="heading">Daily Journal Entries</h1>
       </section>
     </header>
+
+    <!-- MAIN BODY SECTION  -->
     <main>
       <h2>Daily Journal</h2>
-      <section class="date">
-        <form action="">
-          <fieldset>
+      <!-- Date Section  -->
+      <form action="">
+        <fieldset class="">
+          <section class="date">
             <label for="journalDate">Date of entry</label>
             <input type="date" name="journalDate" id="journalDate" />
-          </fieldset>
-        </form>
-      </section>
-      <section class="concepts">
-        <form action="">
-          <fieldset>
+          </section>
+        </fieldset>
+      </form>
+
+      <!-- CONCEPTS SECTION     -->
+      <form action="">
+        <fieldset>
+          <section class="concepts">
             <label for="journalConcepts">Concepts Covered</label>
             <input type="text" name="journalDate" id="journalDate" />
-          </fieldset>
-        </form>
-      </section>
-      <section class="entry">
-        <form action="">
-          <fieldset>
+          </section>
+        </fieldset>
+      </form>
+
+      <!-- ENTREY SECRTION  -->
+      <form action="">
+        <fieldset>
+          <section class="entry">
             <label for="journalEntry">Journal Entry</label>
             <textarea
               name="journalEntry"
@@ -44,26 +55,32 @@
               cols="30"
               rows="2"
             ></textarea>
-          </fieldset>
-        </form>
-      </section>
-      <section class="mood">
-        <form action="">
-          <fieldset>
+          </section>
+        </fieldset>
+      </form>
+
+      <!-- MOOD SECTION      -->
+      <form action="">
+        <fieldset>
+          <section class="mood">
             <label for="journalMood">Mood for the day</label>
             <select name="journalMood" id="journalMood">
               <option value="happy">Happy</option>
               <option value="sad">Sad</option>
               <option value="confused">Confused</option>
             </select>
-          </fieldset>
-        </form>
-      </section>
+          </section>
+        </fieldset>
+      </form>
+      <!-- RECORD BUTTON  -->
       <div class="btn">
         <button>Record Journal Entry</button>
       </div>
     </main>
+
+    <!-- FOOTER SECTION OF PAGE  -->
     <footer>
+      <!-- COPYRIGHT TAG  -->
       <section class="copyright">&copy;Copyright Colby Ryan</section>
     </footer>
     <script src="/scripts/main.js"></script>

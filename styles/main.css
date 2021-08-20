@@ -21,9 +21,12 @@
 
 /* MAIN STYLES */
 
-.Journaldate fieldset {
+.date {
   display: flex;
   flex-direction: column;
+}
+.date input {
+  max-width: 200px;
 }
 
 .entry {
@@ -31,15 +34,28 @@
   flex-flow: column;
 }
 
+.entry textarea {
+  max-width: 200px;
+}
+
 .concepts {
   display: flex;
   flex-flow: column;
+}
+
+.concepts input {
+  max-width: 200px;
 }
 
 .mood {
   display: flex;
   flex-flow: column;
 }
+
+.mood select {
+  max-width: 200px;
+}
+
 /* FOOTER STYLES  */
 
 .copyright {
