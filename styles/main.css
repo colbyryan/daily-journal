@@ -3,6 +3,11 @@
 /* GLOBAL STYLES  */
 
 /* HEADER STYLES  */
+
+header {
+  background: lightgray;
+}
+
 .header_section {
   display: flex;
   flex-direction: row;
@@ -12,6 +17,7 @@
 .heading {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .logo img {
@@ -20,6 +26,17 @@
 }
 
 /* MAIN STYLES */
+
+main {
+}
+
+.journal {
+  background: lightgray;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
 
 .date {
   display: flex;
@@ -54,6 +71,12 @@
 
 .mood select {
   max-width: 200px;
+}
+
+/* BUTTON SECTION  */
+
+.btn {
+  padding-top: 20px;
 }
 
 /* FOOTER STYLES  */
