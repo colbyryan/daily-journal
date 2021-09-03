@@ -1,3 +1,4 @@
+
 const journal = [
     {
         id: 1,
