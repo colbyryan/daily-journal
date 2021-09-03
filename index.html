@@ -16,68 +16,74 @@
         <div class="logo">
           <img src="/images/logo.png" alt="Image of an open journal" />
         </div>
-        <h1 class="heading">Daily Journal Entries</h1>
+        <h1 class="heading">Daily Journal</h1>
       </section>
     </header>
 
     <!-- MAIN BODY SECTION  -->
-    <main>
-      <h2>Daily Journal</h2>
-      <!-- Date Section  -->
-      <section class="journal">
-        <form action="">
-          <fieldset class="">
-            <section class="date">
-              <label for="journalDate">Date of entry</label>
-              <input type="date" name="journalDate" id="journalDate" />
-            </section>
-          </fieldset>
-        </form>
+      <main>
+        <div class="main-style">
+        <h2 class="daily-journal-heading">Entry</h2>
+        <!-- Date Section  -->
+        <section class="journal">
+          <form action="">
+            <fieldset class="">
+              <section class="date">
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate" />
+              </section>
+            </fieldset>
+          </form>
 
-        <!-- CONCEPTS SECTION     -->
-        <form action="">
-          <fieldset>
-            <section class="concepts">
-              <label for="journalConcepts">Concepts Covered</label>
-              <input type="text" name="journalDate" id="journalDate" />
-            </section>
-          </fieldset>
-        </form>
+          <!-- CONCEPTS SECTION     -->
+          <form action="">
+            <fieldset>
+              <section class="concepts">
+                <label for="journalConcepts">Concepts Covered</label>
+                <input type="text" name="journalDate" id="journalDate" />
+              </section>
+            </fieldset>
+          </form>
 
-        <!-- ENTREY SECRTION  -->
-        <form action="">
-          <fieldset>
-            <section class="entry">
-              <label for="journalEntry">Journal Entry</label>
-              <textarea
-                name="journalEntry"
-                id="journalEntry"
-                cols="30"
-                rows="2"
-              ></textarea>
-            </section>
-          </fieldset>
-        </form>
+          <!-- ENTREY SECRTION  -->
+          <form action="">
+            <fieldset>
+              <section class="entry">
+                <label for="journalEntry">Journal Entry</label>
+                <textarea
+                  name="journalEntry"
+                  id="journalEntry"
+                  cols="30"
+                  rows="2"
+                ></textarea>
+              </section>
+            </fieldset>
+          </form>
 
-        <!-- MOOD SECTION      -->
-        <form action="">
-          <fieldset>
-            <section class="mood">
-              <label for="journalMood">Mood for the day</label>
-              <select name="journalMood" id="journalMood">
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="confused">Confused</option>
-              </select>
-            </section>
-          </fieldset>
-        </form>
-      </section>
-      <!-- RECORD BUTTON  -->
-      <div class="btn">
-        <button>Record Journal Entry</button>
+          <!-- MOOD SECTION      -->
+          <form action="">
+            <fieldset>
+              <section class="mood">
+                <label for="journalMood">Mood for the day</label>
+                <select name="journalMood" id="journalMood">
+                  <option value="happy">Happy</option>
+                  <option value="sad">Sad</option>
+                  <option value="confused">Confused</option>
+                </select>
+              </section>
+            </fieldset>
+          </form>
+        </section>
+        <!-- RECORD BUTTON  -->
+        <div class="btn">
+          <button>Record Journal Entry</button>
+        </div>
+        <div class="entry-section">
+          <h3>Entries:</h3>
+        <section class="entryLog"></section>
       </div>
-    </main>
+      </main>
+    </div>
 
     <!-- FOOTER SECTION OF PAGE  -->
     <footer>
@@ -85,7 +91,5 @@
       <section class="copyright">&copy;Copyright Colby Ryan</section>
     </footer>
     <script type="module" src="/scripts/main.js"></script>
-
-    <section class="entryLog"></section>
   </body>
 </html>

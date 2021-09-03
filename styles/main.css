@@ -1,11 +1,16 @@
 /* LINKS  */
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
 /* GLOBAL STYLES  */
-
+html {
+  margin: 0px;
+  padding: 0px;
+}
 /* HEADER STYLES  */
 
 header {
   background: lightgray;
+  font-family: Oswald, sans-serif;
+  font-size: 1.75em;
 }
 
 .header_section {
@@ -23,16 +28,29 @@ header {
 .logo img {
   width: 75px;
   height: 75px;
+  padding-left: 15px;
+}
+
+.daily-journal-heading {
+  font-family: Oswald, sans-serif;
 }
 
 /* MAIN STYLES */
 
+.main-style {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: Monserrat, sans-serif;
 }
 
 .journal {
   background: lightgray;
-  width: 50%;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -43,7 +61,6 @@ main {
   flex-direction: column;
 }
 .date input {
-  max-width: 200px;
 }
 
 .entry {
@@ -52,7 +69,6 @@ main {
 }
 
 .entry textarea {
-  max-width: 200px;
 }
 
 .concepts {
@@ -61,7 +77,6 @@ main {
 }
 
 .concepts input {
-  max-width: 200px;
 }
 
 .mood {
@@ -70,17 +85,28 @@ main {
 }
 
 .mood select {
-  max-width: 200px;
 }
 
 /* BUTTON SECTION  */
 
 .btn {
   padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ENTRIES SECTION  */
+
+.journalEntry {
+  padding: 5px 0px;
+}
+
+.entry-section {
+  height: 500px;
 }
 
 /* FOOTER STYLES  */
 
 .copyright {
   text-align: center;
+  padding-top: 20px;
 }
