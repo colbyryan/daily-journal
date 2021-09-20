@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
 /* GLOBAL STYLES  */
 html {
-  margin: 0px;
-  padding: 0px;
+  margin: -10px;
+  padding: -13px;
 }
 /* HEADER STYLES  */
 
@@ -11,12 +11,13 @@ header {
   background: lightgray;
   font-family: Oswald, sans-serif;
   font-size: 1.75em;
+  margin: 0;
+  padding: 0;
 }
 
 .header_section {
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 
 .heading {
@@ -40,6 +41,7 @@ header {
 .main-style {
   display: flex;
   flex-direction: column;
+  width: 800px;
 }
 
 main {
@@ -71,6 +73,16 @@ main {
 .entry textarea {
 }
 
+.post-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.post-row p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+}
 .concepts {
   display: flex;
   flex-flow: column;
@@ -92,6 +104,7 @@ main {
 .btn {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: white;
 }
 
 /* ENTRIES SECTION  */
@@ -102,6 +115,8 @@ main {
 
 .entry-section {
   height: 500px;
+  border: 1px black solid;
+  padding: 0px 10px;
 }
 
 /* FOOTER STYLES  */
