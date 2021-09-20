@@ -1,19 +1,17 @@
-export const createPost = (postObj) => {
-    return fetch('http://localhost:8088/Journal', {
-        meathod: "JOURNAL", 
-        headers: {
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify(postObj)
-    })
-    .then(response => response.json())
-}
+// FETCH CALL FOR CREATING A NEW POST 
 
-let postCollection = [];
+export const createPost = postObj => {
+	return fetch("http://localhost:8088/Journal", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(postObj)
+  
+	}).then(response => response.json())
+  }
 
-export const usePostCollection = () => {
-    return [...postCollection]
-}
+// FETCH CALL FOR DISPLAYING EXISTING POSTS TO THE DOM
 
 export const getPosts = () => {
     return fetch ('http://localhost:8088/Journal')
@@ -22,4 +20,10 @@ export const getPosts = () => {
         postCollection = paresedResponse
         return paresedResponse;
     })
+}
+
+let postCollection = [];
+
+export const usePostCollection = () => {
+    return [...postCollection]
 }

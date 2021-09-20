@@ -1,14 +1,5 @@
 export const JournalEntryComponent = (entry) => {
     return `  <section class="journal">
-    <form action="">
-      <fieldset class="">
-        <section class="date">
-          <label for="journalDate">Date of entry</label>
-          <input type="date" name="journalDate" id="journalDate" />
-        </section>
-      </fieldset>
-    </form>
-
     <!-- CONCEPTS SECTION     -->
     <form action="">
       <fieldset>

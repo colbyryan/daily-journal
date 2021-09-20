@@ -1,12 +1,18 @@
 {
-    "Journal": [
-        {
-            "id": 1,
-            "date": 1358098484,
-            "concept": "HTML and CSS",
-            "entry": "We talked about HTML components and how to make a grid layout with Flexbox",
-            "mood": "Happy"
-        }
-       
-    ]
+  "Journal": [
+    {
+      "id": 1,
+      "date": 1358098484,
+      "concept": "HTML and CSS",
+      "entry": "We talked about HTML components and how to make a grid layout with Flexbox",
+      "mood": "Happy"
+    },
+    {
+      "date": 1632170584942,
+      "concept": "JSON and Javascript",
+      "entry": "Today we learned about how to integrate save, edit, and delete buttons on our websites to complete CRUD. We learned how to add to JSON API's from input fields on the DOM as well. ",
+      "mood": "happy",
+      "id": 2
+    }
+  ]
 }

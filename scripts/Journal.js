@@ -1,14 +1,14 @@
-export const Post = (postOjb) => {
-    return `<section class="post" id="${postOjb[0].id}">
+export const Post = (postObj) => {
+    return `<section class="post" id="${postObj.id}">
                 <h3>Entry</h3>
-                <p>${postOjb[0].entry}</p>
+                <p>${postObj.entry}</p>
                 <div class ="post-row">
                     <h3>Date</h3>
-                    <p>${postOjb[0].date}</p>
+                    <p>${postObj.date}</p>
                     <h3>Concept</h3>
-                    <p>${postOjb[0].concept}</p>
+                    <p>${postObj.concept}</p>
                     <h3>Mood</h3>
-                    <p>${postOjb[0].mood}</p>
+                    <p>${postObj.mood}</p>
                 </div>
             </section>`
 }
