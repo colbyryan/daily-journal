@@ -76,12 +76,13 @@ main {
 .post-row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
 }
+
 .post-row p {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 7px;
+  padding-top: 5px;
+  padding-right: 55px;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 .concepts {
   display: flex;
@@ -102,9 +103,57 @@ main {
 /* BUTTON SECTION  */
 
 .btn {
+  background: lightgray;
+  border-radius: 10px;
+  border-style: none;
+  width: 150px;
+  height: 25px;
+}
+.btn:hover {
+  background: rgb(129, 129, 129);
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  width: 150px;
+  height: 25px;
+}
+.btn_div {
+  background: white;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.delete_entry {
+  border-radius: 10px;
+  border-style: none;
+  background-color: lightgray;
+  width: 65px;
+  height: 25px;
+}
+.delete_entry:hover {
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(129, 129, 129);
+  width: 65px;
+  height: 25px;
+  color: white;
+}
+.edit_entry {
+  border-radius: 10px;
+  border-style: none;
+  background-color: lightgray;
+  width: 65px;
+  height: 25px;
+}
+.edit_entry:hover {
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(129, 129, 129);
+  width: 65px;
+  height: 25px;
+  color: white;
 }
 
 /* ENTRIES SECTION  */

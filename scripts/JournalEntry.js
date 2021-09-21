@@ -39,8 +39,8 @@ export const JournalEntryComponent = (entry) => {
           </select>
         </section>
       </fieldset>
-      <div class="btn">
-      <button id="newPost_submit">Record Journal Entry</button>
+      <div class="btn_div">
+      <button id="newPost_submit" class="btn">Record Journal Entry</button>
     </div>
     </form>
   </section>
