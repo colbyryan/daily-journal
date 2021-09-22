@@ -22,9 +22,11 @@ export const getPosts = () => {
     })
 }
 
+// THIS IS THE FUNCTION THAT DELETES POSTS 
+
 export const deletePost = postId => {
     return fetch(`http://localhost:8088/Journal/${postId}`, {
-        meathod: 'DELETE',
+        method: 'DELETE',
         headers: {
             "Content-Type": "application/json"
         }
@@ -32,6 +34,8 @@ export const deletePost = postId => {
     .then(response => response.json())
     .then(getPosts)
 }
+
+// FUNCTION FOR POST COLLECTION 
 
 let postCollection = [];
 

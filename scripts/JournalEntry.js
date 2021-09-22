@@ -1,5 +1,5 @@
 export const JournalEntryComponent = (entry) => {
-    return `  <section class="journal">
+    return `  <section class="journal-sec">
     <!-- CONCEPTS SECTION     -->
     <form action="">
       <fieldset>
@@ -39,10 +39,11 @@ export const JournalEntryComponent = (entry) => {
           </select>
         </section>
       </fieldset>
-      <div class="btn_div">
-      <button id="newPost_submit" class="btn">Record Journal Entry</button>
-    </div>
+      
     </form>
   </section>
+  <div class="btn_div">
+      <button id="newPost_submit" class="btn">Record Journal Entry</button>
+    </div>
  `
 };
