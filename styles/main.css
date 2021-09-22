@@ -1,18 +1,29 @@
 /* LINKS  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 /* GLOBAL STYLES  */
 html {
   margin: -10px;
   padding: -13px;
+  font-family: Open Sans, sans-serif;
+}
+
+body {
+  background: rgb(211, 229, 255);
+  padding-right: -10px;
 }
 /* HEADER STYLES  */
 
 header {
-  background: lightgray;
-  font-family: Oswald, sans-serif;
+  background: rgb(104, 179, 248);
+  font-family: Open Sans, sans-serif;
+  color: white;
   font-size: 1.75em;
   margin: 0;
   padding: 0;
+}
+
+header h1 {
+  padding-top: 25px;
 }
 
 .header_section {
@@ -24,16 +35,18 @@ header {
   display: flex;
   justify-content: center;
   margin: auto;
+  height: 100px;
 }
 
 .logo img {
   width: 75px;
   height: 75px;
-  padding-left: 15px;
+  padding-left: 25px;
+  padding-top: 20px;
 }
 
 .daily-journal-heading {
-  font-family: Oswald, sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 /* MAIN STYLES */
@@ -48,26 +61,30 @@ main {
   padding-top: 50px;
   display: flex;
   justify-content: center;
-  font-family: Monserrat, sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .journal {
-  background: lightgray;
   display: flex;
   justify-content: center;
   flex-flow: column;
 }
-
-.date {
-  display: flex;
-  flex-direction: column;
-}
-.date input {
+.journal-sec fieldset {
+  border: none;
+  border-style: none;
 }
 
+.journal-sec {
+  border: 1px darkgray solid;
+  border-radius: 20px;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
 .entry {
   display: flex;
   flex-flow: column;
+  border: none;
 }
 
 .entry textarea {
@@ -76,6 +93,7 @@ main {
 .post-row {
   display: flex;
   flex-flow: row wrap;
+  border-style: none;
 }
 
 .post-row p {
@@ -101,41 +119,61 @@ main {
 }
 
 /* BUTTON SECTION  */
+.logout a {
+  color: white;
+  padding-right: 15px;
+}
 
+.logout a:hover {
+  color: rgb(20, 55, 255);
+  padding-right: 15px;
+}
+
+.logout a:visited {
+  color: white;
+  padding-right: 15px;
+}
 .btn {
-  background: lightgray;
+  background: rgb(104, 179, 248);
+  color: white;
+  font-style: bolder;
+  font-size: 16px;
   border-radius: 10px;
   border-style: none;
-  width: 150px;
-  height: 25px;
+  width: 200px;
+  height: 30px;
 }
 .btn:hover {
-  background: rgb(129, 129, 129);
+  background: rgb(33, 148, 255);
   color: white;
+  font-style: bold;
+  font-size: 16px;
   border-radius: 10px;
   border-style: none;
-  width: 150px;
-  height: 25px;
+  width: 200px;
+  height: 30px;
 }
+
 .btn_div {
-  background: white;
+  background: rgb(211, 229, 255);
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
 .delete_entry {
   border-radius: 10px;
   border-style: none;
-  background-color: lightgray;
+  background-color: rgb(104, 179, 248);
   width: 65px;
   height: 25px;
+  color: white;
 }
 .delete_entry:hover {
   border-radius: 10px;
   border-style: none;
-  background-color: rgb(129, 129, 129);
+  background-color: rgb(33, 148, 255);
   width: 65px;
   height: 25px;
   color: white;
@@ -143,14 +181,15 @@ main {
 .edit_entry {
   border-radius: 10px;
   border-style: none;
-  background-color: lightgray;
+  background-color: rgb(255, 103, 103);
   width: 65px;
   height: 25px;
+  color: white;
 }
 .edit_entry:hover {
   border-radius: 10px;
   border-style: none;
-  background-color: rgb(129, 129, 129);
+  background-color: rgb(255, 59, 59);
   width: 65px;
   height: 25px;
   color: white;
@@ -162,10 +201,13 @@ main {
   padding: 5px 0px;
 }
 
-.entry-section {
-  height: 500px;
-  border: 1px black solid;
+.entryLog {
+  border: 1px darkgray solid;
   padding: 0px 10px;
+  padding-bottom: 15px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 /* FOOTER STYLES  */
@@ -173,4 +215,5 @@ main {
 .copyright {
   text-align: center;
   padding-top: 20px;
+  color: rgb(255, 255, 255);
 }

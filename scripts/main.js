@@ -1,5 +1,5 @@
 import { createPost, getPosts, deletePost } from "./DataManager.js"
-import { Post } from "./Journal.js";
+// import { Post } from "./Journal.js";
 import { JournalEntryComponent } from "./JournalEntry.js";
 import { postList } from "./JournalEntryList.js";
 
@@ -47,9 +47,10 @@ applicationElement.addEventListener("click", event => {
     }
 })
 
+// HERE IS THE DELETE POST BUTTON 
+
 applicationElement.addEventListener('click', event => {
     event.preventDefault();
-    // console.log("delete clicked")
     if(event.target.id.startsWith("delete")) {
         const postId = event.target.id.split("__")[1];
         deletePost(postId)
