@@ -64,3 +64,6 @@ applicationElement.addEventListener('click', event => {
 
 postJournal();
 showPosts();
+
+
+console.log("testing")
